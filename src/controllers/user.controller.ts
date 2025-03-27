@@ -20,3 +20,5 @@ const listUserControllers = async (req: Request, res: Response) => {
     const users = await listUserService()
     return res.json({users: users});
 }
+
+export { createUserController, listUserControllers };
