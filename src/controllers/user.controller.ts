@@ -1,6 +1,7 @@
 import { Response, Request } from "express";
 import createUserService from "../services/createUser.service";
 import listUserService from "../services/listUser.service";
+import retrieveUserService from "../services/retriveUser.service";
 
 const createUserController = async (req: Request, res: Response) => {
     try {
@@ -21,4 +22,19 @@ const listUserControllers = async (req: Request, res: Response) => {
     return res.json({users: users});
 }
 
-export { createUserController, listUserControllers };
+const retrieveUserController = async (req: Request, res: Response) => {
+    try {
+        const userId = req.params.userId
+       const user = await retrieveUserService(userId)
+        return res.status(200).json(user)
+    } catch (error) {
+        if(error instanceof Error){
+            return res.status(404).json({
+                message: error.message
+            })
+        }
+    }
+}
+
+
+export { createUserController, listUserControllers, retrieveUserController };
