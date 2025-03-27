@@ -2,6 +2,7 @@ import { Response, Request } from "express";
 import createUserService from "../services/createUser.service";
 import listUserService from "../services/listUser.service";
 import retrieveUserService from "../services/retriveUser.service";
+import deleteUserService from "../services/deleteUser.service";
 
 const createUserController = async (req: Request, res: Response) => {
     try {
@@ -36,5 +37,21 @@ const retrieveUserController = async (req: Request, res: Response) => {
     }
 }
 
+const deleteUserController = async (req: Request, res: Response) => {
+    try {
+        const userId = req.params.userId
+        const user = await deleteUserService(userId)
+        return res.status(200).json({message: 'User Delete',user})
+        /*await deleteUserService(userId)
+        return res.status(204).send();*/
+    } catch (error) {
+        if(error instanceof Error){
+            return res.status(404).json({
+                message: error.message
+            })
+        }
+    }
+}
 
-export { createUserController, listUserControllers, retrieveUserController };
+
+export { createUserController, listUserControllers, retrieveUserController, deleteUserController };
