@@ -1,5 +1,6 @@
 import { Response, Request } from "express";
 import createUserService from "../services/createUser.service";
+import listUserService from "../services/listUser.service";
 
 const createUserController = async (req: Request, res: Response) => {
     try {
@@ -13,4 +14,9 @@ const createUserController = async (req: Request, res: Response) => {
             })
         }
     }
+}
+
+const listUserControllers = async (req: Request, res: Response) => {
+    const users = await listUserService()
+    return res.json({users: users});
 }
