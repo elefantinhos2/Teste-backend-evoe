@@ -174,7 +174,7 @@ Vazio
 		"id": "aa3f4db7-5471-45dd-8b99-9c8233e6388b",
 		"name": "Douglas",
 		"email": "Douglas@email.com",
-		"password": "senhaFraca",
+        "password": "senhaFraca",
         "age" : 20,
 		"created_at": "2022-09-25T18:02:50.448Z",
 		"updated_at": "2022-09-25T18:02:50.448Z"
@@ -183,7 +183,7 @@ Vazio
 		"id": "00dfaa44-8032-4d05-9e65-a8f764c6af53",
 		"name": "Shanks",
 		"email": "Shanks@email.com",
-		"password": "senhaForte",
+        "password": "senhaForte",
         "age" : 34,
 		"created_at": "2022-09-25T20:02:41.068Z",
 		"updated_at": "2022-09-25T20:02:41.068Z"
@@ -196,6 +196,7 @@ Vazio
 | Código do Erro  | Descrição                         |
 | --------------- | --------------------------------- |
 | nenhum          | Nenhum erro tratado               |
+
 [ Voltar para os Endpoints ](#índice)
 
 ### 4 **Atualizando Usuários**
@@ -234,7 +235,7 @@ OBS: Todas as informações podem ser atualizados, ou apenas uma
 		"id": "00dfaa44-8032-4d05-9e65-a8f764c6af53",
 		"name": "Shank - O Ruivo",
 		"email": "Shanks@email.com",
-		"password": "senhaForte",
+        "password": "senhaForte",
         "age" : 34,
 		"updated_at": "2022-09-25T20:03:37.821Z"
 	}
@@ -246,6 +247,7 @@ OBS: Todas as informações podem ser atualizados, ou apenas uma
 | Código do Erro  | Descrição                         |
 | --------------- | --------------------------------- |
 | 404 Bad Request | "User not found".                 |
+
 [ Voltar para os Endpoints ](#índice)
 
 ### 5 **Deletando Usuários Especifico**
@@ -281,7 +283,7 @@ Vazio
 		"id": "55743eab-0889-4aa2-81b4-029672a8d432",
 		"name": "Shank - O Ruivo",
 		"email": "Shanks@email.com",
-	    "password": "senhaForte",
+        "password": "senhaForte",
         "age" : 34,
 		"created_at": "2022-09-25T19:12:37.755Z",
 		"updated_at": "2022-09-25T19:13:19.567Z",
@@ -294,6 +296,7 @@ Vazio
 | Código do Erro  | Descrição                         |
 | --------------- | --------------------------------- |
 | 404 Bad Request | "User not found".                 |
+
 [ Voltar para os Endpoints ](#índice)
 
 ### 6 **Listando Usuários Especifico**
@@ -332,4 +335,5 @@ Content-type: application/json
 | Código do Erro  | Descrição                         |
 | --------------- | --------------------------------- |
 | 404 Bad Request | "User not found".                 |
+
 [ Voltar para os Endpoints ](#índice)
