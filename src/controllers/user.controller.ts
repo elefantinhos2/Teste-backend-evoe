@@ -43,8 +43,6 @@ const deleteUserController = async (req: Request, res: Response) => {
         const userId = req.params.userId
         const user = await deleteUserService(userId)
         return res.status(200).json({message: 'User Delete',user})
-        /*await deleteUserService(userId)
-        return res.status(204).send();*/
     } catch (error) {
         if(error instanceof Error){
             return res.status(404).json({

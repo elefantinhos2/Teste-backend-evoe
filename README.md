@@ -155,7 +155,6 @@ Authorization: None
 Content-type: application/json
 ```
 
-Para listar todos os usuários, você não precisa estar logado.
 
 ### Corpo da Requisição:
 
@@ -261,7 +260,6 @@ Host: http://localhost:3000
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZlNTlkMmQ2LTg5MmUtNGE5OC1iNjJjLWJiM2RkZWVmYWM4MiIsImFkbSI6ZmFsc2UsImlhdCI6MTY1ODM1MTk2MiwiZXhwIjoxNjU4MzU1NTYyfQ._S5WW_T4kDMnVTLjESv2GqQgjO21pNBW9O2dxejWXFM
 Content-type: application/json
 ```
-Para Deletar um único os usuários você precisa estar logado.
 
 
 ### Corpo da Requisição:
@@ -310,7 +308,6 @@ Host: http://localhost:3000
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZlNTlkMmQ2LTg5MmUtNGE5OC1iNjJjLWJiM2RkZWVmYWM4MiIsImFkbSI6ZmFsc2UsImlhdCI6MTY1ODM1MTk2MiwiZXhwIjoxNjU4MzU1NTYyfQ._S5WW_T4kDMnVTLjESv2GqQgjO21pNBW9O2dxejWXFM
 Content-type: application/json
 ```
-Para listar um único os usuários você precisa estar logado, pois recebera informações dos contatos do usuario logado.
 
 ### Exemplo de Response:
 
